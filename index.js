@@ -15,3 +15,10 @@ function reset(){
     document.getElementById('ageindays').remove();
 }
 
+function generateCat(){
+    var image = document.createElement('img');
+    var section = document.getElementById('cats');
+    image.src = "https://api.thecatapi.com/api/images/get?format=src&type=gif&size=small";
+    section.appendChild(image);
+}
+
